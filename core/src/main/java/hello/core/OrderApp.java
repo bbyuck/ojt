@@ -3,6 +3,7 @@ package hello.core;
 import hello.core.member.Grade;
 import hello.core.member.Member;
 import hello.core.member.MemberService;
+import hello.core.order.HelloLombok;
 import hello.core.order.Order;
 import hello.core.order.OrderService;
 import org.springframework.context.ApplicationContext;
@@ -26,5 +27,7 @@ public class OrderApp {
 
         Order order = orderService.createOrder(memberId, "itemA", 10000);
         System.out.println("order = " + order);
+
+
     }
 }
